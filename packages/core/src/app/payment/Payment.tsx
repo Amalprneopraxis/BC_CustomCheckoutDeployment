@@ -190,6 +190,8 @@ class Payment extends Component<
             selectedMethod && getUniquePaymentMethodId(selectedMethod.id, selectedMethod.gateway);
 
         return (
+            <>
+            <h2>Adyen Payments</h2>
             <PaymentContext.Provider value={this.getContextValue()}>
                 <ChecklistSkeleton isLoading={!isReady}>
                     {!isEmpty(methods) && defaultMethod && (
@@ -229,6 +231,7 @@ class Payment extends Component<
                 {this.renderOrderErrorModal()}
                 {this.renderEmbeddedSupportErrorModal()}
             </PaymentContext.Provider>
+            </>
         );
     }
 

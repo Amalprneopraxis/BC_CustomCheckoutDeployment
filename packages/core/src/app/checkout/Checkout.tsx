@@ -387,6 +387,8 @@ class Checkout extends Component<
         } = this.state;
 
         return (
+            <>
+            <h3>Custom Checkout</h3>
             <CheckoutStep
                 {...step}
                 heading={<TranslatedString id="customer.customer_heading" />}
@@ -420,6 +422,7 @@ class Checkout extends Component<
                     viewType={customerViewType}
                 />
             </CheckoutStep>
+            </>
         );
     }
 
