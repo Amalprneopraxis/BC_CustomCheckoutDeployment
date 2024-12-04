@@ -388,7 +388,7 @@ class Checkout extends Component<
 
         return (
             <>
-            <h3>Custom Checkout</h3>
+            <h3>Custom Checkout for BB2B</h3>
             <CheckoutStep
                 {...step}
                 heading={<TranslatedString id="customer.customer_heading" />}
